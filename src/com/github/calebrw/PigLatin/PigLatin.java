@@ -4,14 +4,22 @@ public class PigLatin {
     public void LatinMaker(String input) {
         char[] charArray = input.toCharArray();
 
-        switch (charArray[0]) {
+        if (!isVowel(charArray[0])) {
+            System.out.println("This word starts with a consonant.");
+        }
+
+    }
+
+    private Boolean isVowel(char c){
+        switch (c) {
             case 'a':
             case 'e':
             case 'i':
             case 'o':
             case 'u':
-                System.out.println(input);
+                return true;
         }
-        System.out.println("This word starts with a consonant.");
+        return false;
+
     }
 }

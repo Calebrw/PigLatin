@@ -3,12 +3,14 @@ package com.github.calebrw.PigLatin;
 public class Main {
 
     public static void main(String[] args) {
-	final String stringOne = "banana";
-	final String stringTwo = "soul";
+
+        String[] array = {"pig", "latin", "banana", "trash", "happy", "duck", "dopest", "me", "too", "will", "moist",
+                "wet","real", "simple", "say","bagel"};
 
 	PigLatin pigLatin = new PigLatin();
-	pigLatin.LatinMaker(stringOne);
-	pigLatin.LatinMaker(stringTwo);
 
+    for (String item : array) {
+        pigLatin.LatinMaker(item);
+    }
     }
 }
