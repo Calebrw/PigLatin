@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * PigLatin class
- *
+ * <p>
  * ::LatinMaker translates a word into Pig Latin
  */
 public class PigLatin {
