@@ -2,7 +2,19 @@ package com.github.calebrw.PigLatin;
 
 import java.util.Arrays;
 
+/**
+ * PigLatin class
+ *
+ * ::LatinMaker translates a word into Pig Latin
+ */
 public class PigLatin {
+
+    /**
+     * Translate a word into Pig Latin
+     *
+     * @param input The word to translate.
+     * @return The translated word.
+     */
     public String LatinMaker(String input) {
         char[] charArray = input.toCharArray();
         int arrayLength = charArray.length;
@@ -27,6 +39,12 @@ public class PigLatin {
         return result;
     }
 
+    /**
+     * Determine whether a character is a vowel or not
+     *
+     * @param c The character to check
+     * @return true if a vowel
+     */
     private Boolean isVowel(char c) {
         switch (c) {
             case 'a':
