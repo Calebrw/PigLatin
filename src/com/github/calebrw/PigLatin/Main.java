@@ -5,12 +5,12 @@ public class Main {
     public static void main(String[] args) {
 
         String[] array = {"pig", "latin", "banana", "trash", "happy", "duck", "dopest", "me", "too", "will", "moist",
-                "wet","real", "simple", "say","bagel"};
+                "wet", "real", "simple", "say", "bagel"};
 
-	PigLatin pigLatin = new PigLatin();
+        PigLatin pigLatin = new PigLatin();
 
-    for (String item : array) {
-        pigLatin.LatinMaker(item);
-    }
+        for (String item : array) {
+            System.out.println(pigLatin.LatinMaker(item));
+        }
     }
 }

@@ -3,19 +3,25 @@ package com.github.calebrw.PigLatin;
 import java.util.Arrays;
 
 public class PigLatin {
-    public void LatinMaker(String input) {
+    public String LatinMaker(String input) {
         char[] charArray = input.toCharArray();
         int arrayLength = charArray.length;
+
+        String result;
 
         if (!isVowel(charArray[0])) {
             char[] charArray2 = Arrays.copyOfRange(charArray, 1, arrayLength);
 
-            System.out.println(String.valueOf(charArray2) + charArray[0] + "ay");
+            result = String.valueOf(charArray2) + charArray[0] + "ay";
+        } else {
+            // Todo: Test this.
+            result = input;
         }
 
+        return result;
     }
 
-    private Boolean isVowel(char c){
+    private Boolean isVowel(char c) {
         switch (c) {
             case 'a':
             case 'e':
