@@ -12,6 +12,12 @@ public class PigLatin {
         if (!isVowel(charArray[0])) {
             char[] charArray2 = Arrays.copyOfRange(charArray, 1, arrayLength);
 
+            if (!isVowel(charArray2[0])) {
+                String newString = String.valueOf(charArray2) + charArray[0];
+                result = LatinMaker(newString);
+                return result;
+            }
+
             result = String.valueOf(charArray2) + charArray[0] + "ay";
         } else {
             // Todo: Test this.

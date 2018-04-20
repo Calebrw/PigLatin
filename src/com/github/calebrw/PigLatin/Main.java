@@ -5,7 +5,8 @@ public class Main {
     public static void main(String[] args) {
 
         String[] array = {"pig", "latin", "banana", "trash", "happy", "duck", "dopest", "me", "too", "will", "moist",
-                "wet", "real", "simple", "say", "bagel"};
+                "wet", "real", "simple", "say", "bagel", "string", "cheers", "shesh", "smile", "thanks", "stupid",
+                "glove"};
 
         PigLatin pigLatin = new PigLatin();
 
