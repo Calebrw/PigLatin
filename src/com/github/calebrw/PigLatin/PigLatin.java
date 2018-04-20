@@ -32,7 +32,6 @@ public class PigLatin {
 
             result = String.valueOf(charArray2) + charArray[0] + "ay";
         } else {
-            // Todo: Test this.
             result = input;
         }
 
